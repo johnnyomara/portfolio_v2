@@ -22,6 +22,10 @@ export const AboutMe = () => {
       </HeaderWrapper>
       <AboutMeWrapper>
         <LeftWrapper>
+        <AboutMeText>
+            If you want the tl;dr you can check out my{" "}
+            <InlineLink href={resume}>resume</InlineLink> here. If you're a fan of a good origin story, read on.
+          </AboutMeText>
           <AboutMeText>
             I was born in New York and at the age of 2 retired to Florida, where
             I spent my formative years. I attended the University of Florida
@@ -49,11 +53,6 @@ export const AboutMe = () => {
             features while maintaining our internal component library, and
             implementing frontend testing to ensure a consistent and reliable
             user experience.
-          </AboutMeText>
-          <AboutMeText>
-            If you want to get a more detailed view of my skills and experience,
-            feel free to check out my{" "}
-            <InlineLink href={resume}>resume</InlineLink>.
           </AboutMeText>
         </LeftWrapper>
         <RightWrapper>
