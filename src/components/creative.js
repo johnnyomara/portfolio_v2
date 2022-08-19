@@ -27,7 +27,7 @@ export const Creative = () => {
         <ProjectWrapper>
           <ProjectHeader>Billbuds Podcast</ProjectHeader>
           <a href={"https://billbudspod.com/"}>
-            <ProjectPhoto src={billbuds} />
+            <ProjectPhoto src={billbuds} alt={"A logo styled to resemble the artwork for the 'Now That's What I Call Music' albums."}/>
           </a>
           <ProjectCaption>
             Billbuds is a pop music review podcast by two unlikely pop music
@@ -38,7 +38,7 @@ export const Creative = () => {
           <ProjectHeader>Campaign Podcast</ProjectHeader>
           <a href={"http://oneshotpodcast.com/actual-play/campaign/skyjacks/"}>
             {" "}
-            <ProjectPhoto src={skyjacks} />
+            <ProjectPhoto src={skyjacks} alt={"A pirate ship with wings flying above the sea."}/>
           </a>
           <ProjectCaption>
             Skyjacks is an anti-colonial RPG actual play podcast about folktales
