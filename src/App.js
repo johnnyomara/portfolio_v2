@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Home } from "./components/home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import styled from "@emotion/styled";
+import { AboutMe } from "./components/aboutMe";
+import { Projects } from "./components/projects";
+import { Creative } from "./components/creative";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/aboutme" element={<AboutMe />} />
+          <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/creative" element={<Creative />} />
+        </Routes>
+      </BrowserRouter>
+    </AppWrapper>
   );
-}
+};
+const AppWrapper = styled.body({ color: "black" });
 
 export default App;
