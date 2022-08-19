@@ -16,13 +16,13 @@ export const Creative = () => {
   return (
     <>
       <NavBar />
-<HeaderWrapper>
-      <Header>Creative Stuff</Header>
-      <SubHead>
-        In addition to being a web developer I'm also a pretty funny guy. Here
-        are a couple of the creative projects I've worked on.
-      </SubHead></HeaderWrapper>
-
+      <HeaderWrapper>
+        <Header>Creative Stuff</Header>
+        <SubHead>
+          In addition to being a web developer I'm also a pretty funny guy. Here
+          are a couple of the creative projects I've worked on.
+        </SubHead>
+      </HeaderWrapper>
       <CreativeWrapper>
         <ProjectWrapper>
           <ProjectHeader>Billbuds Podcast</ProjectHeader>

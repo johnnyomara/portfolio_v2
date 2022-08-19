@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { isMobile } from "../utils/utils";
 
 export const Header = styled.h1({
   display: "flex",
@@ -38,7 +39,7 @@ export const Logo = styled.img({
 
 export const HomeText = styled.p({
   color: "white",
-  width: "33%",
+  width: isMobile() ? "80%" : "33%",
   textAlign: "center",
   margin: "auto",
   padding: 10,
@@ -58,7 +59,7 @@ export const NavbarWrapper = styled.div({
   paddingTop: 20,
   paddingBottom: 20,
   width: "100%",
-  textAlign: "right",
+  textAlign: isMobile() ? "center" : "right",
   backgroundColor: "rgb(29, 28, 28)",
 });
 
@@ -67,28 +68,34 @@ export const InlineLink = styled.a({
   ":visited": "none",
 });
 
-export const LeftWrapper = styled.div({
-  width: "50%",
-});
 export const RightWrapper = styled.div({
+  width: isMobile() ? "100%" : "50%",
+  justifyContent: "center",
+  alignContent: "center",
+  textAlign: "center",
+  margin: "auto",
+});
+export const LeftWrapper = styled.div({
   margin: "auto",
 });
 export const AboutMeWrapper = styled.div({
   display: "flex",
-  flexDirection: "row",
+  flexDirection: isMobile() ? "column" : "row",
 });
 
 export const AboutMeText = styled.p({
   color: "white",
   width: "80%",
-  textAlign: "left",
-  padding: 10,
+  textAlign: isMobile() ? "center" : "left",
+  justifyContent: "center",
+  padding: "auto",
+  paddingLeft: 10,
   marginRight: "auto",
-  marginLeft: 0,
+  marginLeft: "auto",
 });
 
 export const Photo = styled.img({
-  height: 500,
+  height: isMobile() ? 300 : 500,
   display: "block",
   marginLeft: "auto",
   marginRight: "auto",
@@ -105,8 +112,8 @@ export const Caption = styled.p({
 
 export const CreativeWrapper = styled.div({
   display: "Flex",
-  flexDirection: "row",
-  marginTop: 20
+  flexDirection: isMobile() ? "column" : "row",
+  marginTop: 20,
 });
 
 export const ProjectWrapper = styled.div({
@@ -117,7 +124,9 @@ export const ProjectWrapper = styled.div({
   justifyContent: "center",
   textAlign: "center",
   backgroundColor: "rgb(29, 28, 28)",
-  width: "40%",
+  width: isMobile() ? "85%" : "40%",
+  marginTop: 10,
+  marginBottom: 10,
   borderRadius: 25,
 });
 
