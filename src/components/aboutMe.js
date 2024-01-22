@@ -10,7 +10,7 @@ import {
   Photo,
   Caption,
 } from "./styled";
-import resume from "../documents/John OMara_Resume_2022.pdf";
+import resume from "../documents/resume2024.pdf";
 import buster from "../images/buster.jpeg";
 
 export const AboutMe = () => {
@@ -52,10 +52,10 @@ export const AboutMe = () => {
             they'll need to succeed!
           </AboutMeText>
           <AboutMeText>
-            More recently I worked at{" "}
-            <InlineLink href={"https://www.sayrhino.com/"}>Rhino</InlineLink> as
+            More recently I've worked at{" "}
+            <InlineLink href={"https://www.sayrhino.com/"}>Rhino</InlineLink> and <InlineLink href={"https://www.optum.com/"}>Optum</InlineLink> as
             a frontend software engineer. There I helped develop and ship new
-            features while maintaining our internal component library, and
+            features while maintaining internal component libraries, and
             implementing frontend testing to ensure a consistent and reliable
             user experience.
           </AboutMeText>
