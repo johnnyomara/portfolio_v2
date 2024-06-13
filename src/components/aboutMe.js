@@ -10,7 +10,7 @@ import {
   Photo,
   Caption,
 } from "./styled";
-import resume from "../documents/resume2024.pdf";
+import resume from "../documents/Resume.pdf";
 import buster from "../images/buster.jpeg";
 
 export const AboutMe = () => {
