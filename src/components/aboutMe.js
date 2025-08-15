@@ -53,10 +53,10 @@ export const AboutMe = () => {
           </AboutMeText>
           <AboutMeText>
             More recently I've worked at{" "}
-            <InlineLink href={"https://www.sayrhino.com/"}>Rhino</InlineLink> and <InlineLink href={"https://www.optum.com/"}>Optum</InlineLink> as
-            a frontend software engineer. There I helped develop and ship new
-            features while maintaining internal component libraries, and
-            implementing frontend testing to ensure a consistent and reliable
+            <InlineLink href={"https://www.sayrhino.com/"}>Rhino</InlineLink>, <InlineLink href={"https://www.optum.com/"}>Optum</InlineLink>, and <InlineLink href={"https://www.bankofamerica.com/"}>Bank of America</InlineLink> as
+            a frontend software engineer. I've helped develop and ship new
+            features using React, React Native, MUI, Node, and Python while maintaining internal component libraries, and
+            implementing frontend testing using Jest and Cypress to ensure a consistent and reliable
             user experience.
           </AboutMeText>
         </RightWrapper>

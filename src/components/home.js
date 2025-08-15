@@ -10,7 +10,7 @@ import {
 import johnny from "../images/johnny.jpeg";
 import github from "../logos/github.png";
 import linkedin from "../logos/linkedin.png";
-import twitter from "../logos/twitter.png";
+import bluesky from "../logos/bluesky.png";
 import instagram from "../logos/instagram.png";
 
 export const Home = () => {
@@ -37,8 +37,8 @@ export const Home = () => {
         <a href={"https://www.linkedin.com/in/johnnyomara/"}>
           <Logo src={linkedin} />{" "}
         </a>
-        <a href={"https://twitter.com/JohnnyInBriefs"}>
-          <Logo src={twitter} />
+        <a href={"https://bsky.app/profile/johnnyinbriefs.bsky.social"}>
+          <Logo src={bluesky} />
         </a>
         <a href={"https://instagram.com/JohnnyInBriefs"}>
           <Logo src={instagram} />
